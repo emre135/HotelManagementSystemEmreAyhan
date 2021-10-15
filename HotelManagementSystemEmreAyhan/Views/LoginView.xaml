@@ -1,0 +1,36 @@
+﻿<Window x:Class="HotelManagementSystemEmreAyhan.Views.LoginView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelManagementSystemEmreAyhan.Views"
+        xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+        
+        mc:Ignorable="d"
+        Title="Login" WindowStartupLocation="CenterScreen" Height="254" Width="368">
+
+    <Grid prism:RegionManager.RegionName="ContentRegion" VerticalAlignment="Center">
+        <StackPanel Margin="0,0,0,15" HorizontalAlignment="Center" Orientation="Vertical">
+            <Label Margin="0,0,10,0">UserName:</Label>
+            <TextBox x:Name="txtUserName" HorizontalContentAlignment="Center"   Width="120"></TextBox>
+
+            <Label Margin="0,0,10,0">Password:</Label>
+            <TextBox x:Name="txtPassword" HorizontalContentAlignment="Center"   Width="120"></TextBox>
+
+            <Button Margin="0,20,0,0" Click="Button_Click">Login</Button>
+
+            <Label HorizontalContentAlignment="Center" Margin="0,5,0,0">Or</Label>
+
+            <Button Margin="0,5,0,0" Click="Button_Click_1">Sign Up</Button>
+
+        </StackPanel>
+
+      
+
+
+    </Grid>
+    
+    
+    
+</Window>
